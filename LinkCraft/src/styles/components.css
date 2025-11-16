@@ -1,0 +1,185 @@
+/* =========================
+   Buttons
+   ========================= */
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0052cc;
+  box-shadow: 0 6px 20px rgba(11, 102, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn-ghost:hover {
+  background: var(--glass);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* =========================
+   Cards
+   ========================= */
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 16px;
+  box-shadow: var(--shadow-1);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent);
+}
+
+/* =========================
+   Toasts
+   ========================= */
+.toast-viewport {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  min-width: 260px;
+  max-width: 380px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-weight: 600;
+  transform-origin: top right;
+  animation: toast-in 0.14s ease;
+}
+
+.toast-info {
+  background: linear-gradient(90deg, #4863ff, #2bb6ff);
+}
+
+.toast-success {
+  background: linear-gradient(90deg, #00b894, #00d084);
+}
+
+.toast-error {
+  background: linear-gradient(90deg, #ff5c7c, #ff7a5c);
+}
+
+.toast-message {
+  flex: 1;
+  font-size: 14px;
+}
+
+.toast-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* =========================
+   Loaders
+   ========================= */
+.loader {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse-scale 1.4s infinite ease-in-out;
+}
+
+.loader .dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Spinning loader */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--glass);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Small centered loader helper */
+.center-loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.center-loader .loader {
+  flex-direction: row;
+  gap: 12px;
+}
+
+.center-loader .spinner {
+  width: 50px;
+  height: 50px;
+  border-width: 5px;
+}
+
+/* Inline loader for buttons */
+.btn-loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}

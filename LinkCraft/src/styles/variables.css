@@ -1,0 +1,45 @@
+/* =========================
+   Theme variables
+   ========================= */
+:root{
+  --bg: #f6f9fc;
+  --surface: #ffffff;
+  --muted: #6b7a8a;
+  --text: #0b2545;
+  --border: #e6e9ef;
+  --accent: #0b66ff;
+  --success: #00b894;
+  --danger: #ff5c7c;
+  --glass: rgba(11,38,73,0.04);
+  --shadow-1: 0 6px 20px rgba(25,40,70,0.04);
+  --shadow-2: 0 2px 8px rgba(25,40,70,0.08);
+  --glass-2: rgba(11,102,255,0.06);
+  
+  /* Aliases for component compatibility */
+  --card-bg: #ffffff;
+  --text-color: #0b2545;
+  --border-color: #e6e9ef;
+  --accent-color: #0b66ff;
+}
+
+/* Dark theme */
+[data-theme='dark']{
+  --bg: #0f1720;
+  --surface: #111317;
+  --muted: #9aa6b2;
+  --text: #e6eef8;
+  --border: #22272d;
+  --accent: #4aa3ff;
+  --success: #00d084;
+  --danger: #ff6b7a;
+  --glass: rgba(255,255,255,0.03);
+  --shadow-1: 0 10px 30px rgba(2,6,23,0.7);
+  --shadow-2: 0 2px 8px rgba(0,0,0,0.3);
+  --glass-2: rgba(255,255,255,0.03);
+  
+  /* Aliases for component compatibility */
+  --card-bg: #111317;
+  --text-color: #e6eef8;
+  --border-color: #22272d;
+  --accent-color: #4aa3ff;
+}
